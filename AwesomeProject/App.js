@@ -21,22 +21,27 @@ export default class SectionListBasics extends Component {
 //function getUserList() {
 //  return ['test', 'James', 'Jillian', 'Jimmy', 'Joel', 'John', 'Julie']
 //  }
-//function getUserList() {
-//  return fetch('http://localhost:8080/user/brw')
-//    .then((response) => response.json())
-//    .then((responseJson) => {
-//      return responseJson.users;
-//    })
-//    .catch((error) => {
-//      console.error(error);
-//    });
-//}
-
 function getUserList() {
-  return fetch('http://localhost:8080/user/brw').then(function(response){return ['1','2']);}
-//return ['{"id":1,"name":"Tom","password":"no_pass"}','{"id":2,"name":"Jerry","password":"no_pass"}'];
-//return {"id":1,"name":"Tom","password":"no_pass"},{"id":2,"name":"Jerry","password":"no_pass"};
+// fetch('http://www.baidu.com').then((response) => response.json()).then((responseJson) => {
+    fetch('http://www.baidu.com').then((response) => console.log( response.headers.toString()));
+
+
+
+
+   // fetch('http://localhost:8080/user/dsp').then(function(response){});
+  //  fetch('http://www.baidu.com').then(function(response){});
+
+ return ['1','2'];
 }
+
+// function getUserList() {
+//   //return fetch('http://localhost:8080/user/brw').then(function(response){});
+//
+//     return ['1','2','3'];
+//
+// }
+
+
 const styles = StyleSheet.create({
   container: {
    flex: 1,
